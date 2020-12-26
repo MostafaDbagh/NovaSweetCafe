@@ -26,7 +26,9 @@ mongoose.connection.on('error',(err)=>{
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(cors())
 app.use(bodyParser.json())
-
+app.get('/',(req,res)=>{
+    res.send("hello Customers")
+})
 app.use('/api',router)
 if(process.env.NODE_ENV ==='production'){
     app.use(express.static('client/build'))
