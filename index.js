@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const app = express()
 const mongoose = require('mongoose')
-const apiPort = 3005
+const apiPort = 3001
 
 
 const router = require('./routes/review-route')
@@ -25,6 +25,7 @@ mongoose.connection.on('error',(err)=>{
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(cors())
 app.use(bodyParser.json())
+
 app.use('/api',router)
 if(process.env.NODE_ENV ==='production'){
     app.use(express.static('client/build'))
