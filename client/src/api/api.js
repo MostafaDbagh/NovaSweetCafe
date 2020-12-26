@@ -5,7 +5,7 @@ import axios from 'axios'
 // })
 const api = axios.create({
     // baseURL:'https://novacafefeedback.herokuapp.com/api',   
-    baseURL:'http://localhost:3005/api',   
+    baseURL:'http://https://novafeedback.herokuapp.com//api',   
      withCredentials: false,
     headers: {
       'Access-Control-Allow-Origin' : '*',
