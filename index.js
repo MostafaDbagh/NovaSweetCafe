@@ -4,7 +4,7 @@ const cors = require('cors')
 const path = require('path')
 const app = express()
 const mongoose = require('mongoose')
-const apiPort = 3005
+const apiPort = process.env.PORT|| 3005
 
 
 const router = require('./routes/review-route')
