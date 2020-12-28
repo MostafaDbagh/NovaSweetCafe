@@ -39,33 +39,34 @@ setData({
    
      <div className="form-group row d-flex justify-content-center flex-column align-items-center ">
     <label  className="col-sm-2 col-form-label h2 muted text-center  my-2 h22"> Name </label>
-      <input type="text"  className="form-control w-25 rounded " onChange={(e)=>setData({...data,name:e.target.value})}  placeholder="Please Enter your Name"  />
+      <input type="text"  className="form-control  rounded " onChange={(e)=>setData({...data,name:e.target.value})}  placeholder="Please Enter your Name"  />
   </div>
      <div className="form-group row d-flex justify-content-center flex-column align-items-center">
     <label  className="col-sm-2 col-form-label h2 muted text-center  my-2 h22"> Quality-Taste </label>
-      <input type="text" onChange={(e)=>setData({...data,taste:e.target.value})} className="form-control w-25 " placeholder="What about Taste from One-Ten"  />
+      <input type="text" onChange={(e)=>setData({...data,taste:e.target.value})} className="form-control  " placeholder="What about Taste from One-Ten"  />
   </div>
 
         <div className="form-group row d-flex justify-content-center flex-column align-items-center">
     <label  className="col-sm-2 col-form-label h2 muted text-center my-2  h22"> Delivery Time </label>
-      <input type="Number"onChange={(e)=>setData({...data,deliverytime:e.target.value})}  className="form-control w-25 "  placeholder="Expected Time to Serve"/>
+      <input type="Number"onChange={(e)=>setData({...data,deliverytime:e.target.value})}  className="form-control  "  placeholder="Expected Time to Serve"/>
   </div>
 
         <div className="form-group row d-flex justify-content-center flex-column align-items-center">
     <label  className="col-sm-2 col-form-label h2 muted text-center my-2  h22"> Value of Money </label>
-      <input type="text"  className="form-control w-25" onChange={(e)=>setData({...data,money:e.target.value})} placeholder="Afordable or Expensive"/>
+      <input type="text"  className="form-control" onChange={(e)=>setData({...data,money:e.target.value})} placeholder="Afordable or Expensive"/>
   </div>
 
         <div className="form-group row d-flex justify-content-center flex-column align-items-center">
     <label  className="col-sm-2 col-form-label h2 muted text-center my-2  h22" > Clean </label>
-      <input type="number" onChange={(e)=>setData({...data,clean:e.target.value})}  className="form-control w-25 safi"  placeholder="Staff Hygiene-Staff Performance"/>
+      <input type="number" onChange={(e)=>setData({...data,clean:e.target.value})}  className="form-control  safi"  placeholder="Staff Hygiene-Staff Performance"/>
   </div>
 
 
         <div className="form-group row d-flex justify-content-center flex-column align-items-center">
     <label  className="col-sm-2 col-form-label h2 muted text-center my-2 h22"> Any-Notes </label>
 
-   <textarea className="form-control w-25" onChange={(e)=>setData({...data,notes:e.target.value})} placeholder="how to improve our services"/>
+   <textarea className="form-control "
+    onChange={(e)=>setData({...data,notes:e.target.value})} placeholder="how to improve our services"/>
     
   </div>
     
