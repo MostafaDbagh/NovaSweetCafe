@@ -29,15 +29,16 @@ setData({
 })
 }
   return (
-    <div className="App bg-light w-75 mx-auto">
+    <div className="App  ">
 
       <div style={{widht:"100vw",height:"170px",textAlign:"center"}}>
         <img src={Nova} alt="nova Logo" width="300px" height="140px" ></img>
       </div>
+      <div className="container col-sm-12 bg-dark  ">
     <form onSubmit={submitRequest} className="mt-2">
 
    
-     <div className="form-group row d-flex justify-content-center flex-column align-items-center ">
+     <div className="form-group row d-flex justify-content-center flex-column align-items-center  ">
     <label  className="col-sm-2 col-form-label h2 muted text-center  my-2 h22"> Name </label>
       <input type="text"  className="form-control  rounded " onChange={(e)=>setData({...data,name:e.target.value})}  placeholder="Please Enter your Name"  />
   </div>
@@ -75,7 +76,7 @@ setData({
   <input type='submit' className="btn btn-primary mx-auto btn-lg" />
   </div>
     </form>
-   
+    </div>
     </div>
   );
 }
