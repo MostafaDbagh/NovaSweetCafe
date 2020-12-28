@@ -29,7 +29,7 @@ setData({
 })
 }
   return (
-    <div className="App bg-light">
+    <div className="App bg-light w-75 mx-auto">
 
       <div style={{widht:"100vw",height:"170px",textAlign:"center"}}>
         <img src={Nova} alt="nova Logo" width="300px" height="140px" ></img>
