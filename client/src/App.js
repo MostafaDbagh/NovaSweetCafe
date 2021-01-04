@@ -6,9 +6,12 @@ import Footer from './components/footer'
 import Navbar from './components/navbar'
 import Map from './components/map'
 import Reviews from './components/review'
+import Offer from './components/offer'
+import Content from './components/conten'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from './components/header'
+
 
 function App() {
 
@@ -17,8 +20,12 @@ function App() {
     <div className="App  ">
 <Header />
      <Navbar/> 
+     <Content />
+     <Offer/>
      <Reviews/>
-     <Review/>
+  <Review/>
+
+
      <Map/>
     
      <Footer /> 

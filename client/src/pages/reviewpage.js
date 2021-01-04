@@ -46,7 +46,7 @@ setData({
   </div>
   </div>
         <div className="form-group row d-flex justify-content-center align-items-center mb-5">
-    <label  className="col-sm-2 col-form-label h2 muted text-center"> Value of Money </label>
+    <label  className="col-sm-2 col-form-label h2 muted "> Value of Money : </label>
     <div className="col-sm-6">
       <input type="text"  className="form-control" onChange={(e)=>setData({...data,money:e.target.value})} placeholder="Afordable or Expensive"/>
   </div>
@@ -60,7 +60,7 @@ setData({
 
 
         <div className="form-group row d-flex justify-content-center  align-items-center mb-5">
-    <label  className="col-sm-2 col-form-label h2 muted text-center "> Any-Notes : </label>
+    <label  className="col-sm-2 col-form-label h2 muted  "> Any-Notes : </label>
 <div className="col-sm-6">
    <textarea className="form-control "
     onChange={(e)=>setData({...data,notes:e.target.value})} placeholder="how to improve our services"/>

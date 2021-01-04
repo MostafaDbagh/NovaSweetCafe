@@ -2,5 +2,7 @@ body{
   
 }
 .active{
-  color:brown
+  color:brown;
+  color:rgb(58, 59, 59);
+  
 }
