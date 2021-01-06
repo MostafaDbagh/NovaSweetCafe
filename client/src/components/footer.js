@@ -1,7 +1,7 @@
 import React from 'react';
 import {Footerdiv,SmallFooterdiv,Footercon,Footerpara,Anchor} from '../style/footerstyle'
 import {SocialIcon} from 'react-social-icons'
-import nova from './../images/Nova.png'
+import Yamazaki from './../images/yamazaki.png'
 import socialIcon from 'react-social-icons/dist/social-icon';
 const Footer = () => {
     
@@ -9,7 +9,7 @@ const Footer = () => {
     <Footercon>
         <Footerdiv>
 <SmallFooterdiv>
-<img src={nova} alt="nova logo" width="260px" height="220px"/>
+<img src={Yamazaki} alt="nova logo" width="260px" height="220px"/>
 <ul style={{padding:"0",position:'relative'}}>
     <SocialIcon network="twitter"  />
     <SocialIcon network="instagram"/>

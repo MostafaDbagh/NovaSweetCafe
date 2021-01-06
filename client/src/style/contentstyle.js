@@ -73,13 +73,14 @@ left:14%;
 `
 export const Rectanglediv =styled.div`
 width:325px;
-height:47px;
-background:rgb(28 27 29);
+height:50px;
+
+background: #fff3bf;
 position:relative;
 border-radius:5px;
 margin-top:60px;
 left:10%;
-color:white;
+color:rgb(28 27 29);
 font-family:lobster,sans-serif;
 `
 export const Shape = styled.div`
@@ -96,11 +97,11 @@ position:relative;
 export const Button = styled.button`
 width:26%;
 height:60px;
-background:rgb(28 27 29);
+background: #fff3bf;
 border:none;
 outline:none;
 cursor:pointer;
-color:white;
+color:rgb(28 27 29);
 font-family:lobster,sans-serif;
 font-size:28px;
 padding:10px 0;

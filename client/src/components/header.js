@@ -1,6 +1,6 @@
 import React from 'react';
 import {Div,Asidiv,Numberfont,Descdiv} from './../style/headerstyle'
-import Nova from './../images/Nova.png'
+import Yamazaki from './../images/yamazaki.png'
 const Header = () => {
     return ( 
 
@@ -10,7 +10,7 @@ const Header = () => {
                 <Numberfont>04-309-8507</Numberfont>
             </Asidiv>
 <div style={{height:"100px",textAlign:"center",marginBottom:"35px "}}>
-        <img src={Nova} alt="nova Logo" width="340px" height="110px" ></img>
+        <img src={Yamazaki} alt="nova Logo" width="340px" height="110px" ></img>
         <div>
             <Descdiv>Japaness Cake  --  Cafe -- Sweets</Descdiv>
         </div>

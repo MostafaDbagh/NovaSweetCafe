@@ -10,7 +10,7 @@ const Content = () => {
      <Wrapper></Wrapper>
      <Shape>
      <Rectanglediv>
-<h3 style={{textAlign:"center"}}>Nova  Cafe</h3>
+<h3 style={{textAlign:"center",margin:0,lineHeight:'50px'}}>Yamazaki  Bakery</h3>
           </Rectanglediv>
      <Clipdiv>
           <h4 style={{position:"absolute",left:"24%"}}> Sweets & savories</h4>
