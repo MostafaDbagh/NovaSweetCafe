@@ -1,5 +1,5 @@
 import React from 'react';
-import {MapDiv,Seconddiv,Input,Textarea,Button,Novamap,Novamap2,Parentdiv,Twodiv,Onediv,Threediv,Inputdiv} from "../style/mapstyle"
+import {MapDiv,Seconddiv,Input,Textarea,Button,Parentdiv,Twodiv,Onediv,Threediv,Inputdiv} from "../style/mapstyle"
 import Shohada from '../imagesC/shohada.jpg'
 const Map  = () => {
     return ( 

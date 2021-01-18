@@ -38,6 +38,7 @@ position:absolute;
 top:-29px;
 left:144px;
 
+
 `
 export const Genralsec =styled.section`
 height:350px;
@@ -46,8 +47,8 @@ background:rgb(68 54 53);
 position:relative;
 border-radius:10px 0 10px 0px;
 text-align:center;
-margin:8px auto;
-margin:0 auto;
+margin:12px auto;
+
 
 `
 export const Spanp= styled.p`

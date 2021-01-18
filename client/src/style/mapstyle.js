@@ -111,11 +111,12 @@ padding:18px 19px 15px;
 margin:0 0px 10px 0;
 font-family:signika,sans-serif;
 @media(max-width:600px){
-    width:390px;
+    width:320px;
 
 }
 &::placeholder{
     color:rgb(34,32,29)
+    
 }
 `
 export const Button = styled.button`

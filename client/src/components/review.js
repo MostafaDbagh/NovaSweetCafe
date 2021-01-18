@@ -42,7 +42,7 @@ export default function SimpleSlider() {
      
         <h2 style={{textAlign:"center",padding:"12px",fontFamily:'signika,sans-serif',color: "rgb(252, 145, 162)"}}>{item.name}</h2>
         <p style={{
-            margin:"8px auto",fontFamily:"signika, sans-serif",padding:"20px",fontWeight:"700",width:"70%",height:'60%',color:"black"}}>{item.review}</p>
+            margin:"8px auto",fontFamily:"signika, sans-serif",padding:"20px",fontWeight:"700",width:"70%",height:'75%',color:"black"}}>{item.review}</p>
       </div>
     ))}
    

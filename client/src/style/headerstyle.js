@@ -19,6 +19,7 @@ background:#443634;
 margin:11px auto;
 color:white;
 box-shadow:0px 2px 5px 1px black; 
+text-align:center;
 `
 const Asidiv=styled.div`
 color:white;
@@ -38,6 +39,7 @@ position:relative;
 over-flow:hidden;
 @media(max-width:820px){
      visibility: hidden;
+    
 }
 `
 const Numberfont = styled.p`
@@ -49,5 +51,11 @@ const Descdiv = styled.p`
 font-family: 'Lobster', cursive;
 text-align:center;
 `
+ const Logodiv2 = styled.div`
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:cetner;
+`
 
-export {Div,Asidiv,Numberfont,Descdiv }
+export {Div,Asidiv,Numberfont,Descdiv,Logodiv2 }

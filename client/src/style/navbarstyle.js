@@ -1,15 +1,16 @@
 import styled from 'styled-components'
 
 const Navbarh = styled.div`
-width:90%;
+width:94%;
 height:70px;
+margin:0 auto;
 box-shadow:0px 0px 2px 0px black;
 display:flex;
 justify-content:center;
 align-items:center;
 position:relative;
 left:50%;
-margin-left:-45%;
+margin-left:-47%;
 
 `
 const Unorderlist = styled.ul`
