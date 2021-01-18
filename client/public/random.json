@@ -1,0 +1,39 @@
+[
+    {"id":1,
+        "name":"Japanese Cookies",
+        "price":"56",
+        "image":"./images/b.png"
+    },
+    {"id":2,
+        "name":"Smoked Salamon",
+        "price":"35",
+        "image":"./images/b2.png",
+        "details":"Smoked Salmon,Sushi Rice,Kiwi,Cheese"
+    },
+    {"id":28,
+        "name":"Sausage Roll",
+        "price":"7.50",
+        "image":"./images/y22.png",
+        "details":"Dough,Mayonnaise,Tomato,Ketchup,Beef Sausage"
+    },
+
+  
+    {"id":5,
+        "name":"Pistachio Doughnut ",
+        "price":"9.50",
+        "image":"./images/y23.png"
+    },
+    {"id":3,
+        "name":"Picachu",
+        "price":"10.50",
+        "image":"./images/y25.png"
+      
+    },
+    {"id":6,
+        "name":"Blueberry Bun",
+        "price":"9.50",
+        "image":"./images/y24.png"
+    }
+ 
+     
+]

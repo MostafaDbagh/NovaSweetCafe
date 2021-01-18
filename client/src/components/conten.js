@@ -1,4 +1,8 @@
 import React from 'react';
+import b1 from './../imagesC/b.png'
+import b2 from './../imagesC/b2.png'
+import b3 from './../imagesC/b3.jpg'
+import b4 from './../imagesC/b.png'
 import {Contentdiv,Wrapper,Clipdiv,Rectanglediv,Shape,Flexdiv,Div1,Span,Titlediv,Button} from '../style/contentstyle'
 import {faHeart} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -27,16 +31,22 @@ const Content = () => {
 
           <Flexdiv>
 <Div1>
-    <Span>STORY</Span>
+    
+  
+    <img src={b1} style={{width:"100%",height:"100%",objectFit:'cover'}}/>
+    <Span >STORY</Span>
 </Div1>
 <Div1>
-<Span>MENU</Span>
+<img src={b2} style={{width:"100%",height:"100%",objectFit:'cover'}}/>
+    <Span >INTERIOR</Span>
 </Div1>
 <Div1>
-<Span>INTERIOR</Span>
+<img src={b3} style={{width:"100%",height:"100%",objectFit:'cover'}}/>
+    <Span >MENU</Span>
 </Div1>
 <Div1>
-<Span>ORDER</Span>
+<img src={b4} style={{width:"100%",height:"100%",objectFit:'cover'}}/>
+    <Span >ORDER</Span>
 </Div1>
           </Flexdiv>
        

@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from "react";
+import Sushi from '../imagesC/sushi2.jpg'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -23,28 +24,32 @@ export default function SimpleSlider() {
   };
   return (
       <>
+   <div style={{background:`url(${Sushi})`,width:'90%',height:'580px',margin:'24px auto',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
    
-    <Wrapperdiv style={{margin:"32px auto",width:"90%",background:`url(${bg})`,borderRadius:"10px"}}>
-        <div></div>
-    <h2 style={{textAlign:"center",margin:"32px 0",letterSpacing:'2px',   color: "rgb(252, 145, 162)",fontFamily:"lobster,sans-serif"}}>Customer's Say About Us</h2>
+   <h2 style={{textAlign:"center",margin:"32px 0",letterSpacing:'2px' ,   color: "rgb(252, 145, 162)",fontFamily:"lobster,sans-serif"}}>What Customers Say About Us</h2>
+   <Wrapperdiv style={{margin:"32px auto",width:"90%",height:"60%",background:`rgba(255,255,255,0.7)`,borderRadius:"10px",color:"black"}}>
+        
+    
      
     
     <div style={{textAlign:"center",margin:"10px 0"}}>
-        <FontAwesomeIcon icon={faQuoteLeft} style={{fontSize:"32px",marginBottom:"10px",color:"black"}}/>
+        <FontAwesomeIcon icon={faQuoteLeft} style={{fontSize:"32px",marginBottom:"4px",color:"black"}}/>
         </div>
-    <Slider {...settings} style={{width:"90%",margin:"0 auto",position:"relative"}}>
+    <Slider {...settings}  >
     {review.map(item => (
-      <div key={item.id} style={{position:"relative",height:"900px",width:"80%",}}>
+      <div key={item.id} >
         
      
         <h2 style={{textAlign:"center",padding:"12px",fontFamily:'signika,sans-serif',color: "rgb(252, 145, 162)"}}>{item.name}</h2>
         <p style={{
-            margin:"30px auto",fontFamily:"signika, sans-serif",padding:"20px",fontWeight:"700",width:"65%",color:"white"}}>{item.review}</p>
+            margin:"8px auto",fontFamily:"signika, sans-serif",padding:"20px",fontWeight:"700",width:"70%",height:'60%',color:"black"}}>{item.review}</p>
       </div>
     ))}
    
     </Slider>
     </Wrapperdiv>
+   </div>
+   
     </>
   );
 }

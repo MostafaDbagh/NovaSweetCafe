@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Matcha Tea",
+        "price": 20.47,
+        "image": "./Data/images/Matcha Tea.png"
+    },
+    {
+        "id": 2,
+        "name": "Taru Tea",
+        "price": 20.47,
+        "image": "./Data/images/Taru Tea.png"
+    },
+    {
+        "id": 3,
+        "name": "Melon Tea",
+        "price": 20.47,
+        "image": "./Data/images/Melon Tea.png"
+    }
+]

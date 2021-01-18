@@ -36,6 +36,9 @@ font-family: 'Signika', sans-serif;
 }
 position:relative;
 over-flow:hidden;
+@media(max-width:820px){
+     visibility: hidden;
+}
 `
 const Numberfont = styled.p`
 font-size:21px;

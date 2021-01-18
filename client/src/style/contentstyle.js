@@ -18,15 +18,21 @@ background:rgba(0,0,0,0.6)
 `
 export const Flexdiv = styled.div`
 width:90%;
-height:290px;
+
 margin: 0 auto;
 display:flex;
-justify-content:space-between;
+justify-content:space-around;
+flex-wrap:wrap;
+align-items:center;
 
 `
 export const Span = styled.span`
-vertical-align: middle;
-display:table-cell;
+
+position:absolute;
+top:90%;
+opacity:0.9;
+left:50%;
+transform:translate(-50%,-50%);
 text-align:center;
 font-size:27px;
 font-family:signika,sans-serif;
@@ -39,6 +45,7 @@ width:275px;
 height:285px;
 background:rgb(28 27 29);
 position:relative;
+margin:4px;
 &:before{
 position:absolute;
 content:'';
@@ -95,7 +102,7 @@ font-family:signika,sans-serif;
 position:relative;
 `
 export const Button = styled.button`
-width:26%;
+width:33%;
 height:60px;
 background: #fff3bf;
 border:none;

@@ -13,6 +13,7 @@ position:relative;
 const Footerdiv = styled.div`
 
 display:flex;
+margin-top:32px;
 justify-content:space-around;
 flex-wrap:wrap;
 `
@@ -24,9 +25,10 @@ display:flex;
 justify-content:center;
 align-items:center;
 flex-direction:column;
-margin:76px 0;
+margin:52px 0;
 `
 const Footerpara = styled.div`
+width:100%;
 position:absolute;
 left:50%;
 bottom:10px;

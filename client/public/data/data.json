@@ -1,0 +1,235 @@
+[
+{"Gyoza":[
+    {
+        "id": 1,
+        "name": "Chiken Gyoza",
+        "price": 18.20,
+        "image": "./images/Gyoza.jpg"
+    },
+    {"id":1,
+    "name":"Beaf Gyoza",
+    "price":23.40,
+    "image":"./images/Gyoza.jpg"
+    },
+    {
+        "id": 1,
+        "name": "Shrimp Gyoza",
+        "price": "26",
+        "image": "./images/Gyoza.jpg"
+    }
+]},
+{"Rice":[
+    {
+        "id": 1,
+        "name": "Chicken Fried Rice",
+        "price": "23.40",
+        "image": "./images/Rice.jpg"
+    },
+    {
+        "id": 1,
+        "name": "Seafood Fried Rice",
+        "price": "32.50",
+        "image": "./images/Rice.jpg"
+    },{
+        "id": 1,
+        "name": "Vegetable Egg Fried Rice",
+        "price": "19.50",
+        "image": "./images/Rice.jpg"
+    }
+]},
+{"Salad":[
+    {
+        "id": 1,
+        "name": "Green Crabstick Salad",
+        "price": "28.60",
+        "image": "./images/Green Crabstick Salad.jpg"
+    }
+]},
+{"Noodles":[
+    {
+        "id": 1,
+        "name": "Chicken Yakisoba",
+        "price": "35.10",
+        "image": "./images/Yakisoba.jpg"
+    },{
+        "id": 1,
+        "name": "Shrimp Yakisoba",
+        "price": "39",
+        "image": "./images/Yakisoba.jpg"
+    },{
+        "id": 1,
+        "name": "Vegetable Yakisoba",
+        "price": "32.50",
+        "image": "./images/Yakisoba.jpg"
+    }
+]},
+{"Meal":[
+    {
+        "id":1,
+        "name":"Chicken Tariyaaki with Steam Rice",
+        "price":"28.60",
+        "image":"./images/Steam Rice.jpg"
+    },
+    {
+        "id":2,
+        "name":"Beef  Tariyaki with Steam",
+        "price":"39.00",
+        "image":"./images/Steam Rice.jpg"
+    },
+    {
+        "id":3,
+        "name":"Seafood Tariyaki with Steam Rice",
+        "price":"45.50",
+        "image":"./images/Steam Rice.jpg"
+    }
+]},
+
+{"Characters":[
+    {
+        "id": 1,
+        "name": "Ampanman",
+        "price": 13.65,
+        "image": "./images/Ampanman.jpg"
+    },{
+        "id": 2,
+        "name": "Pikachu",
+        "price": 13.65,
+        "image": "./images/Pikachu.jpg"
+    },{
+        "id": 3,
+        "name": "Monkey",
+        "price": 13.65,
+        "image": "./images/Monkey.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Ferrero Snoopy",
+        "price": 13.65,
+        "image": "./images/Ferrero Snoopy.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Totoro",
+        "price": 13.65,
+        "image": "./images/Totoro.jpg"
+    },{
+        "id": 6,
+        "name": "Hello Kitty",
+        "price": 13.65,
+        "image": "./images/Hello Kitty.jpg"
+    },{
+        "id": 7,
+        "name": "Minion",
+        "price": 13.65,
+        "image": "./images/Minion.jpg"
+    },{
+        "id": 8,
+        "name": "Bear",
+        "price": 13.65,
+        "image": "./images/Bear.jpg"
+    },{
+        "id": 9,
+        "name": "Doraeman",
+        "price": 13.65,
+        "image": "./images/Doraeman.jpg"
+    }
+]},
+{"Croissants":[
+    {
+        "id": 1,
+        "name": "Chocolate Croissant",
+        "price": 9.1,
+        "image": "./images/Chocolate Croissant.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Kiri Croissant",
+        "price": 10.92,
+        "image": "./images/Kiri Croissant.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Pistachio Kiri Croissant",
+        "price": 12.28,
+        "image": "./images/Pistachio Kiri Croissant.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Pistachio Croissant",
+        "price": 12.28,
+        "image": "./images/Pistachio Croissant.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Plain Croissant",
+        "price": 6.82,
+        "image": "./images/Plain Croissant.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Turkey Cheese Croissant",
+        "price": 10.92,
+        "image": "./images/Turkey Cheese Croissant.jpg"
+    }
+]},
+{"Doughnuts":[
+    {
+        "id": 1,
+        "name": "Pistachio Doughnut",
+        "price": 12.28,
+        "image": "./images/Pistachio Doughnut.jpg"
+    }
+]},
+{"Savories":[
+    {
+        "id": 1,
+        "name": "Zatar with Halloumi",
+        "price": 13.65,
+        "image": "./images/Zatar with Halloumi.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Chicken Cheese Mushroom",
+        "price": 13.92,
+        "image": "./images/Chicken Cheese Mushroom.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Egg Briche",
+        "price": 13.65,
+        "image": "./images/Egg Briche.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Japanese Vegetable Pizza",
+        "price": 13.65,
+        "image": "./images/Japanese Vegetable Pizza.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Mayo and Cheese",
+        "price": 10.92,
+        "image": "./images/Mayo and Cheese.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Sausage Jalapeno",
+        "price": 10.92,
+        "image": "./images/Sausage Jalapeno.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Sausage Roll",
+        "price": 9.1,
+        "image": "./images/Sausage Roll"
+    }
+]},
+{"Brownies Cookies":[
+    {
+        "id": 1,
+        "name": "Japanese Cookies",
+        "price": "39",
+        "image": "./images/Japanese Cookies.jpg"
+    }
+]}
+]
