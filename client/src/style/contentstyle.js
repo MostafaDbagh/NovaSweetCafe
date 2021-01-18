@@ -76,6 +76,9 @@ align-items:center;
 position:relative;
 font-size:24px;
 left:14%;
+@media(max-width:550px){
+    left:10%
+}
 
 `
 export const Rectanglediv =styled.div`
@@ -89,6 +92,9 @@ margin-top:60px;
 left:10%;
 color:rgb(28 27 29);
 font-family:lobster,sans-serif;
+@media(max-width:550px){
+    left:7%
+}
 `
 export const Shape = styled.div`
 display:flex;
@@ -113,5 +119,8 @@ font-family:lobster,sans-serif;
 font-size:28px;
 padding:10px 0;
 border-radius:5px;
+@media(max-width:550px){
+    width:55%;
+}
 
 `

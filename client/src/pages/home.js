@@ -14,7 +14,7 @@ export default ()=>{
     return (
         <div>
              <Content /> 
-             <Mostsales/>
+             
             <Offer /> 
             <Review/>
             
