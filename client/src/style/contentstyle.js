@@ -77,7 +77,7 @@ position:relative;
 font-size:24px;
 left:14%;
 @media(max-width:550px){
-    left:10%
+    left:7%
 }
 
 `
@@ -93,7 +93,7 @@ left:10%;
 color:rgb(28 27 29);
 font-family:lobster,sans-serif;
 @media(max-width:550px){
-    left:7%
+    left:5%
 }
 `
 export const Shape = styled.div`

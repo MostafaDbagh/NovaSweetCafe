@@ -36,7 +36,10 @@ const Footer = () => {
 </Footerdiv>
 
 <Footerpara>
-    <span style={{fontSize:"15px",fontFamily:"Signika,sans-serif"}}><Anchor href="#" style>NOVA 2021  </Anchor>ALL RIGHTS RESERVED designed By &nbsp;<b style={{color:"rgb(251,145,163)"}}>Mostafa Dbagh</b> </span>
+    <span style={{fontSize:"15px",fontFamily:"Signika,sans-serif"}}>
+        <Anchor href="#" style>NOVA 2021  </Anchor>
+        ALL RIGHTS RESERVED<br/>
+         designed By &nbsp;<b style={{color:"rgb(251,145,163)"}}>Mostafa Dbagh</b> </span>
     
     
 </Footerpara>
