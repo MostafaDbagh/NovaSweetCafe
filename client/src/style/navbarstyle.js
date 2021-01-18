@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Navbarh = styled.div`
-width:94%;
+width:96%;
 height:70px;
 margin:0 auto;
 box-shadow:0px 0px 2px 0px black;

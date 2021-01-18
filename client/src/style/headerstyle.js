@@ -22,9 +22,14 @@ box-shadow:0px 2px 5px 1px black;
 text-align:center;
 `
 const Asidiv=styled.div`
+width:25%;
+height:100%;
+
 color:white;
 display:flex;
 flex-direction:column;
+align-items:center;
+justify-content:center;
 margin:0 32px;
 font-size:14px;
 font-weight:bold;
@@ -50,12 +55,20 @@ font-weight:bold;
 const Descdiv = styled.p`
 font-family: 'Lobster', cursive;
 text-align:center;
+@media(max-width:550px){
+    widht:100%;
+}
 `
  const Logodiv2 = styled.div`
+ width:50%;
+ height:100%;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:cetner;
+@media(max-width:750px){
+    width:100%;
+}
 `
 
 export {Div,Asidiv,Numberfont,Descdiv,Logodiv2 }
