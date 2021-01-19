@@ -10,7 +10,7 @@ const Header = () => {
                 <Numberfont>04-309-8507</Numberfont>
             </Asidiv>
 <Logodiv2 >
-        <img src={Yamazaki} alt="nova Logo" width="100%" height="110px" style={{maring:'0 auto'}} ></img>
+        <img src={Yamazaki} alt="nova Logo" width="380px" height="110px" style={{objectFit:'cover',margin:'0 auto'}} ></img>
         <Descdiv>
             <div style={{width:"100%"}}>Japaness Cake  --  Cafe -- Sweets</div>
         </Descdiv>

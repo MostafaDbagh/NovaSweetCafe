@@ -43,7 +43,7 @@ font-family: 'Signika', sans-serif;
 position:relative;
 over-flow:hidden;
 @media(max-width:820px){
-     visibility: hidden;
+     display:none;
     
 }
 `
