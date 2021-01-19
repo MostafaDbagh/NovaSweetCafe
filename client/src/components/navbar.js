@@ -31,36 +31,26 @@ const Example = (props) => {
               <NavLink href="/components/">SUSHI</NavLink>
             </NavItem>
             <NavItem>
-            <NavLink href="">SWEET BUNS</NavLink>
+            <NavLink href="https://github.com/reactstrap/reactstrap">SWEET BUNS</NavLink>
             </NavItem>
             <NavItem>
-            <NavLink href="">SOUP</NavLink>
+            <NavLink href="https://github.com/reactstrap/reactstrap">SOUP</NavLink>
             </NavItem>
             <NavItem>
-            <NavLink href="">CAKES</NavLink>
+            <NavLink href="https://github.com/reactstrap/reactstrap">CAKES</NavLink>
             </NavItem>
-        
-         
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                BEVERAGE
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">       HOT BEVERAGES </NavLink>
-                </DropdownItem>
-                <DropdownItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">  COLD BEVERAGES </NavLink>
-                </DropdownItem>
-                <DropdownItem divider />
-              
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            <NavItem>
+            <NavLink href="https://github.com/reactstrap/reactstrap">  COLD BEVERAGES </NavLink>
+            </NavItem>
+            <NavItem>
+            <NavLink href="https://github.com/reactstrap/reactstrap">       HOT BEVERAGES </NavLink>
+            </NavItem>
             <NavItem>
             <NavLink href="https://github.com/reactstrap/reactstrap">       OTHERS </NavLink>
             </NavItem>
+          
           </Nav>
-        
+          
         </Collapse>
       </Navbar>
     </div>

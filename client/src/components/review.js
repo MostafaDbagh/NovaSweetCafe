@@ -24,10 +24,10 @@ export default function SimpleSlider() {
   };
   return (
       <>
-   <div style={{background:`url(${Sushi})`,width:'90%',height:'580px',margin:'24px auto',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+   <div style={{background:`url(${Sushi})`,width:'90%',height:'600px',margin:'24px auto',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
    
    <h2 style={{textAlign:"center",margin:"32px 0",letterSpacing:'2px' ,   color: "rgb(252, 145, 162)",fontFamily:"lobster,sans-serif"}}>What Customers Say About Us</h2>
-   <Wrapperdiv style={{margin:"32px auto",width:"90%",height:"60%",background:`rgba(255,255,255,0.7)`,borderRadius:"10px",color:"black"}}>
+   <Wrapperdiv style={{margin:"32px auto",width:"90%",height:"62%",background:`rgba(255,255,255,0.7)`,borderRadius:"10px",color:"black"}}>
         
     
      
@@ -42,7 +42,7 @@ export default function SimpleSlider() {
      
         <h2 style={{textAlign:"center",padding:"12px",fontFamily:'signika,sans-serif',color: "rgb(252, 145, 162)"}}>{item.name}</h2>
         <p style={{
-            margin:"8px auto",fontFamily:"signika, sans-serif",padding:"20px",fontWeight:"700",width:"70%",height:'84%',color:"black"}}>{item.review}</p>
+            margin:"0px auto",fontFamily:"signika, sans-serif",padding:"20px",fontWeight:"700",width:"70%",height:'84%',color:"black"}}>{item.review}</p>
       </div>
     ))}
    
