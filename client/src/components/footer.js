@@ -34,7 +34,7 @@ const Footer = () => {
 <p style={{fontSize:"17px",color:"rgb(252,145,162",letterSpacing:"3px",margin:"12px 0 0",padding:"10px 16px"}}>WHATSAPP <span>058-605-7772</span></p>
 </SmallFooterdiv>
 </Footerdiv>
-
+<div style={{margin:"32px auto",width:'100%',height:'28px'}}></div>
 <Footerpara>
     <span style={{fontSize:"15px",fontFamily:"Signika,sans-serif"}}>
         <Anchor href="#" style>NOVA 2021  </Anchor>
@@ -43,6 +43,8 @@ const Footer = () => {
     
     
 </Footerpara>
+
+
 
 
 </Footercon>

@@ -9,13 +9,19 @@ color:white;
 border-radius:20px;
 position:relative;
 
+
 `
 const Footerdiv = styled.div`
-
-display:flex;
-margin-top:32px;
-justify-content:space-around;
-flex-wrap:wrap;
+height:400px;
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+align-content:center;
+grid-row-gap:10px;
+@media(max-width:650px){
+    height:auto;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr 1fr 1fr;
+}
 `
 const Anchor = styled.a`
 color:rgb(251,145,163)
@@ -25,7 +31,8 @@ display:flex;
 justify-content:center;
 align-items:center;
 flex-direction:column;
-margin:52px 0;
+
+
 `
 const Footerpara = styled.div`
 width:100%;

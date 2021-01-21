@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom'
 import {
   Collapse,
   Navbar,
@@ -28,25 +29,49 @@ const Example = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mx-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">SUSHI</NavLink>
+            <Link style={{ textDecoration: "none", }} to ="/suchi">
+            <NavLink >SUSHI</NavLink>
+            </Link>
+           
             </NavItem>
             <NavItem>
-            <NavLink href="https://github.com/reactstrap/reactstrap">SWEET BUNS</NavLink>
+           <Link style={{ textDecoration: "none", }}  to="/sweet_buns">
+           <NavLink >
+             SWEET BUNS</NavLink>
+             </Link>
+            </NavItem>
+      
+            <NavItem>
+          
+              <Link style={{ textDecoration: "none", }} to="/soup"> 
+               <NavLink >SOUP  </NavLink>
+               </Link>
+            
+            </NavItem>
+
+            <NavItem>
+          
+              <Link style={{ textDecoration: "none", }} to ="/cakes">
+              <NavLink >
+                CAKES
+                </NavLink>
+                </Link>
+            
             </NavItem>
             <NavItem>
-            <NavLink href="https://github.com/reactstrap/reactstrap">SOUP</NavLink>
+         
+              <Link style={{ textDecoration: "none", }} to="/cold_beverages">
+              <NavLink >  COLD BEVERAGES   </NavLink>
+              </Link>
+            
             </NavItem>
             <NavItem>
-            <NavLink href="https://github.com/reactstrap/reactstrap">CAKES</NavLink>
+             <Link style={{ textDecoration: "none", }} to="/hot_beverages">  <NavLink >HOT BEVERAGES </NavLink></Link>    
             </NavItem>
             <NavItem>
-            <NavLink href="https://github.com/reactstrap/reactstrap">  COLD BEVERAGES </NavLink>
-            </NavItem>
-            <NavItem>
-            <NavLink href="https://github.com/reactstrap/reactstrap">       HOT BEVERAGES </NavLink>
-            </NavItem>
-            <NavItem>
-            <NavLink href="https://github.com/reactstrap/reactstrap">       OTHERS </NavLink>
+            
+              <Link style={{ textDecoration: "none", }}  to="/others">
+              <NavLink >   OTHERS </NavLink></Link>       
             </NavItem>
           
           </Nav>
