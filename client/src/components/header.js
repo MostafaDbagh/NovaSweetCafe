@@ -12,7 +12,7 @@ const Header = () => {
 <Logodiv2 >
         <img src={Yamazaki} alt="nova Logo" width="380px" height="110px" style={{objectFit:'cover',margin:'0 auto'}} ></img>
         <Descdiv>
-            <div style={{width:"100%"}}>Japaness Cake  --  Cafe -- Sweets</div>
+            <div style={{width:"100%",fontSize:"16px",letterSpacing:"1px"}}>PASTERY CAKE  --  SUSHI -- RAMEN & MORE</div>
         </Descdiv>
       </Logodiv2>
       <Asidiv>
