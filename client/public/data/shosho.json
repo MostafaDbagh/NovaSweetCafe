@@ -3,42 +3,42 @@
         "id": 1,
         "name": "California Tobiko",
         "price": 45.50,
-        "image": "./Data/images/California Tobiko.jpg",
-        "details": "Mayonnaise,Suchi Rice,Cucumber,Chili Sauce"
+        "image": "./Data/pimages//california.jpg"
+       
     },
     {
         "id": 2,
-        "name": "Crab Stick Gunkan",
+        "name": "Crab Stick",
         "price": 45.50,
-        "image": "./Data/images/Crab Stick Gunkan.jpg",
+        "image": "./Data/pimages/crab.jpg",
         "details": "Strawberry,Avocado,Mayonnaise and Fish Egg,Suchi Rice"
     },
     {
         "id": 3,
         "name": "Smoked Salmon with Cream Cheese",
         "price": 45.50,
-        "image": "./Data/images/Smoked Salmon with Cream Cheese.jpg",
+        "image": "./Data/pimages/smoked.jpg",
         "details": "Smoked Salmon,Sushi Rice,Kiwi,Cheese"
     },
     {
         "id": 4,
         "name": "Spicy Crunchy Prawn",
         "price": 45.50,
-        "image": "./Data/images/Spicy Crunchy Prawn.jpg",
+        "image": "./Data/pimages/spicy.jpg",
         "details": "Prawn,Mayonnaise,Chili Sauce,Chili Powder,Suchi Rice"
     },
     {
         "id": 5,
         "name": "Salmon Avocado Roll",
         "price": 45.50,
-        "image": "./Data/images/Salmon Avocado Roll.jpg",
+        "image": "./Data/pimages/salmon.jpg",
         "details": "Salmon,Avocado ,Mayonnaise,Suchi Rice ,Fish Egg"
     },
     {
         "id": 6,
         "name": "California with Sesame Seeds",
         "price": 45.50,
-        "image": "./Data/images/California with Sesame Seeds.jpg",
+        "image": "./Data/pimages/californiaseed.jpg",
         "details": "Crab Stick,Avocado,Sesame Seed ,Mango,Mayonnaise"
     }
 ]
