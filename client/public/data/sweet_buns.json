@@ -3,60 +3,60 @@
         "id": 1,
         "name": "Classic Cinnamon",
         "price": "13.65",
-        "image": "./data/images/Classic Cinnamon.jpg"
+        "image": "./data/pimages/Classic Cinnamon.jpg"
     },
     {
         "id": 2,
         "name": "French Brulee",
         "price": "9.45",
-        "image": "./data/images/French Brulee.jpg"
+        "image": "./data/pimages/French Brulee.jpg"
     },
     {
         "id": 3,
         "name": "Choco Bun",
         "price": "10.92",
-        "image": "./data/images/Choco Bun.jpg"
+        "image": "./data/pimages/Choco Bun.jpg"
     },
     {
         "id": 4,
         "name": "Coffe Bun",
         "price": "9.10",
-        "image": "./data/images/Coffee Bun.jpg"
+        "image": "./data/pimages/Coffee Bun.jpg"
     },
     {
         "id": 5,
         "name": "Salted Caramel",
         "price": "10.92",
-        "image": "./data/images/Salted Caramel.jpg"
+        "image": "./data/pimages/Salted Caramel.jpg"
     },
     {
         "id": 6,
         "name": "Blueberry Bun",
         "price": "12.28",
-        "image": "./data/images/Blueberry Bun.jpg"
+        "image": "./data/pimages/Blueberry Bun.jpg"
     },
     {
         "id": 7,
         "name": "Baymax",
         "price": "13.65",
-        "image": "./data/images/Baymax.jpg"
+        "image": "./data/pimages/Baymax.jpg"
     },
     {
         "id": 8,
         "name": "Japanese Cheese Cake",
         "price": "13.65",
-        "image": "./Data/images/Japanese Cheese Cake.jpg"
+        "image": "./Data/pimages/Japanese Cheese Cake.jpg"
     },
     {
         "id": 9,
         "name": "Ensaymade",
         "price": "6.25",
-        "image": "./data/images/Ensaymade.jpg"
+        "image": "./data/pimages/Ensaymade.jpg"
     },
     {
         "id": 10,
         "name": "Pistachio Kiri Bun",
         "price": "10.92",
-        "image": "./data/images/Pistachio Kiri Bun.jpg"
+        "image": "./data/pimages/Pistachio Kiri Bun.jpg"
     }
 ]
