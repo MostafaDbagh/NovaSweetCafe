@@ -72,13 +72,6 @@ const Imagediv = styled.div `
 width:280px;
 height:180px;
 overflow:hidden;
-
-
-
-
-
-  
-
 `
 const Parag = styled.p`
   font-size: 16px;

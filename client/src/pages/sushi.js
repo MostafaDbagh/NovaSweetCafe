@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Subpage from '../components/frontsub'
 import { Div } from '../style/cardstyle'
 import Yamazakicard  from './../components/YamazakiCard'
 const Product = () => {
@@ -14,7 +15,7 @@ const Product = () => {
     console.log(Data)
     return (
         <>
-            <h2 style={{ textAlign: "center", color: "#5e6f64", marginBottom: "25px", fontFamily: "'Berkshire Swash', cursive" }}>Sushi</h2>
+           <Subpage title="SUSHI"/>
             <Div style={{ marginBottom: "35px" }}>
             {Data.map(i => (
                <Yamazakicard

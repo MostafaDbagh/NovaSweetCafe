@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Div } from '../style/cardstyle'
-
+import Subpage from '../components/frontsub'
 import Yamazakicard  from './../components/YamazakiCard'
 const Product = () => {
     const [Data, setData] = useState([])
@@ -18,7 +18,7 @@ const Product = () => {
     console.log(Data)
     return (
         <>
-            <h2 style={{ textAlign: "center", color: "#5e6f64", marginBottom: "25px", fontFamily: "'Berkshire Swash', cursive" }}>Sweet Buns</h2>
+            <Subpage title="SWEET_BUNS"/>
             <Div style={{ marginBottom: "35px" }}>
                 {Data.map(i => (
                      <Yamazakicard
