@@ -5,7 +5,7 @@ const Product = () => {
     const [Data, setData] = useState([])
     useEffect(() => {
         const fetchData = () => {
-            fetch("https://novasweetcafe.herokuapp.com//Data/shosho.json")
+            fetch("./data/shosho.json")
                 .then(res =>  res.json())
                 .then(data => setData(data));
         };
