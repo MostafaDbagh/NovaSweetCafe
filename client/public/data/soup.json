@@ -3,30 +3,30 @@
         "id": 1,
         "name": "Chicken Dumpling Soup",
         "price": 32.50,
-        "image": "./Data/images/Dumpling Soup.png"
+        "image": "./data/pimages/Dumpling Soup.png"
     },
     {
         "id": 2,
         "name": "Beef Dumpling Soup",
         "price": 39,
-        "image": "./Data/images/Dumpling Soup.png"
+        "image": "./data/pimages/Dumpling Soup.png"
     },
     {
         "id": 3,
         "name": "Chicken Ramen Soup",
         "price": 32.50,
-        "image": "./Data/images/Ramen Soup.jpg"
+        "image": "./data/pimages/Ramen Soup.jpg"
     },
     {
         "id": 4,
         "name": "Beef Ramen Soup",
         "price": 39,
-        "image": "./Data/images/Ramen Soup.jpg"
+        "image": "./data/pimages/Ramen Soup.jpg"
     },
     {
         "id": 5,
         "name": "Seafood Ramen Soup",
         "price": 45.50,
-        "image": "./Data/images/Ramen Soup.jpg"
+        "image": "./data/pimages/Ramen Soup.jpg"
     }
 ]

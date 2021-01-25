@@ -45,7 +45,7 @@
         "id": 8,
         "name": "Japanese Cheese Cake",
         "price": "13.65",
-        "image": "./Data/pimages/Japanese Cheese Cake.jpg"
+        "image": "./data/pimages/Japanese Cheese Cake.jpg"
     },
     {
         "id": 9,

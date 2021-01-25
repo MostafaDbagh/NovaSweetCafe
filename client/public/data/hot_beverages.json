@@ -3,6 +3,6 @@
         "id": 1,
         "name": "Cappcuccino",
         "price": 20.47,
-        "image": "./Data/pimages/Cappcuccino.png"
+        "image": "./data/pimages/Cappcuccino.png"
     }
 ]

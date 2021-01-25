@@ -3,18 +3,18 @@
         "id": 1,
         "name": "Vanilla Roll Cake",
         "price": 12.65,
-        "image": "./Data/images/"
+        "image": "./data/pimages/"
     },
     {
         "id": 2,
         "name": "Matcha Cake Roll",
         "price": 12.65,
-        "image": "./Data/images/"
+        "image": "./data/pimages/"
     },
     {
         "id": 3,
         "name": "Chocolate Roll Cake",
         "price": 12.65,
-        "image": "./Data/images/"
+        "image": "./data/pimages/"
     }
 ]

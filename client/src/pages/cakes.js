@@ -6,7 +6,7 @@ const Product = () => {
     const [Data, setData] = useState([])
     useEffect(() => {
         const fetchData = () => {
-            fetch("./Data/cake.json")
+            fetch("./data/cake.json")
                 .then(res => {
                     console.log(res)
                     return res.json()
