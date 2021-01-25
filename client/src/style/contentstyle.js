@@ -78,7 +78,7 @@ position:relative;
 font-size:24px;
 left:14%;
 @media(max-width:550px){
-    left:2%
+    left:3%
 }
 
 `
@@ -95,7 +95,7 @@ lineHeight:50px;
 color:rgb(28 27 29);
 font-family:lobster,sans-serif;
 @media(max-width:550px){
-    left:1%
+    left:2%
 
 }
 `
