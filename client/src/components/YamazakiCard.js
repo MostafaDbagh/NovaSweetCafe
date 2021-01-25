@@ -7,13 +7,13 @@ const YamazakiCard = (props) => {
     const {name,price,image} = props
     return ( 
        <Card >
-           <div className="card-header" style={{padding:"0",marginBottom:"10px"}}>
+          
                <Imagediv>
                <Image src={image}/>
       
                </Imagediv>
        
-           </div>
+         
            <Cardbody>
                <H4>{name} </H4>
                <div style={{width:"275px",height:"5px",padding:"0 30px",margin:"0 0 20px"}}></div>

@@ -53,37 +53,29 @@ const Modaldiv = styled.div`
 const Card = styled.div`
   width: 280px;
   margin: 16px;
-  word-wrap:break-word;
-  position: relative;
+  over-flow:hidden;
+
+  
+
 `;
 
 const Image = styled.img`
   
   width:100%;
-  height: 100%;
-  
-  transition:.7s ease-in transform;
+  transition:1.7s ease-in transform;
 
   &:hover{
-
- 
-  
-      transform:scale(1.1) rotate(3deg)
+      transform:scale(1.5) rotate(15deg)
     }
-  
-
-
-
-
   `
 const Imagediv = styled.div `
 width:280px;
 height:180px;
+overflow:hidden;
 
-width:280px;
-height:180px;
 
-  transition:.7s all ease-out;
+
+
 
   
 
