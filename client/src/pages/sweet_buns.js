@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Div } from '../style/cardstyle'
-import { Rdiv, Rimage, RPara } from '../style/product'
+
 import Yamazakicard  from './../components/YamazakiCard'
 const Product = () => {
     const [Data, setData] = useState([])

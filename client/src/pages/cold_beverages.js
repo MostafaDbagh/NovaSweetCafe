@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Div } from '../style/cardstyle'
 import Yamazakicard  from './../components/YamazakiCard'
-import { Rdiv, Rimage, RPara } from '../style/product'
+
 
 const Product = () => {
     const [Data, setData] = useState([])

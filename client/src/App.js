@@ -29,12 +29,12 @@ function App() {
       <Layout>
         <Switch>
           <Route exact path='/' component={Home} />
-           <Route exact path='/sushi' component={Sushi} />
-          <Route exact path='/sweets_buns' component={Sweet_buns} />
-          <Route exact path='/soup' component={Soup} />
-          <Route exact path='/cakes' component={Cakes} />
-          <Route exact path='/cold_beverages' component={Cold_Beverages} />
-          <Route exact path='/hot_beverages' component={Hot_Beverages} />
+           <Route  path='/sushi' component={Sushi} />
+          <Route  path='/sweet_buns' component={Sweet_buns} />
+          <Route  path='/soup' component={Soup} />
+          <Route  path='/cakes' component={Cakes} />
+          <Route  path='/cold_beverages' component={Cold_Beverages} />
+          <Route  path='/hot_beverages' component={Hot_Beverages} />
          
         </Switch>
       </Layout>

@@ -7,6 +7,7 @@ const Map  = () => {
         <h2 style={{textAlign:"center",marginBottom:"32px",letterSpacing:'2px',position:'relative',top:"20px" ,   color: "rgb(252, 145, 162)",fontFamily:"lobster,sans-serif"}}>
             Where You Can Find Us
             </h2>  
+            <div style={{width:"100%",height:"42px"}}></div>
       <Parentdiv>
           <Onediv>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.418862030085!2d55.34485471511391!3d25.290127583852996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d8daa434dfd%3A0xcb0acb8c1e057326!2sNova%20Sweets%20and%20Cafe%20Century%20Mall!5e0!3m2!1sen!2sae!4v1609508875059!5m2!1sen!2sae"  frameborder="0" 

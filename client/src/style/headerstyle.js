@@ -22,7 +22,7 @@ box-shadow:0px 2px 5px 1px black;
 text-align:center;
 `
 const Asidiv=styled.div`
-width:25%;
+width:20%;
 height:100%;
 
 color:white;
@@ -35,10 +35,10 @@ font-size:14px;
 font-weight:bold;
 font-family: 'Signika', sans-serif;
 &:first-child{
-    animation:${motionasidedivleft} .6s 1 ;
+    animation:${motionasidedivleft} .9s 1 ;
 }
 &:last-child{
-    animation:${motionasidedivright} .9s 1 ;
+    animation:${motionasidedivright} 1.3s 1 ;
 }
 position:relative;
 over-flow:hidden;
@@ -60,7 +60,7 @@ text-align:center;
 }
 `
  const Logodiv2 = styled.div`
- width:50%;
+ width:60%;
  height:100%;
 display:flex;
 flex-direction:column;

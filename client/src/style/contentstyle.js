@@ -25,6 +25,7 @@ justify-content:space-around;
 flex-wrap:wrap;
 align-items:center;
 
+
 `
 export const Span = styled.span`
 
@@ -64,7 +65,7 @@ left:0;
 
 `
 export const Clipdiv = styled.div`
-width:336px;
+width:320px;
 height:60px;
 clip-path: polygon(0 0, 100% 0, 88% 45%, 100% 100%, 0 100%, 13% 50%);
 
@@ -77,12 +78,12 @@ position:relative;
 font-size:24px;
 left:14%;
 @media(max-width:550px){
-    left:7%
+    left:2%
 }
 
 `
 export const Rectanglediv =styled.div`
-width:325px;
+width:322px;
 height:50px;
 
 background: #fff3bf;
@@ -90,10 +91,12 @@ position:relative;
 border-radius:5px;
 margin-top:60px;
 left:10%;
+lineHeight:50px;
 color:rgb(28 27 29);
 font-family:lobster,sans-serif;
 @media(max-width:550px){
-    left:5%
+    left:1%
+
 }
 `
 export const Shape = styled.div`

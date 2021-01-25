@@ -2,17 +2,14 @@ import React, { useEffect, useState } from "react";
 import { Div } from '../style/cardstyle'
 
 import Yamazakicard  from './../components/YamazakiCard'
-import { Rdiv, Rimage, RPara } from '../style/product'
+
 
 const Product = () => {
     const [Data, setData] = useState([])
     useEffect(() => {
         const fetchData = () => {
             fetch("http://localhost:3000/Data/sushi.json")
-                .then(res => {
-                    console.log(res)
-                    return res.json()
-                })
+                .then(res =>  res.json())
                 .then(data => setData(data));
         };
         fetchData();
