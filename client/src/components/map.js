@@ -40,7 +40,7 @@ style={{border:0 , allowfullscreen:"", ariaHidden:"false", tabindex:"0",width:'1
     </Inputdiv>
     <div style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
     <Textarea placeholder="YOUR-MESSAGE"width="80%" height="114px" onChange={e => setMessage({...message,msg:e.target.value})}></Textarea>
-    <Button onSubmit={()=> handleSubmit}>Send Message</Button>
+    <Button onClick={()=> handleSubmit}>Send Message</Button>
     {console.log(message)}
     </div>
 
