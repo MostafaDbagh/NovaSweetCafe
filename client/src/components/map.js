@@ -1,7 +1,18 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {MapDiv,Seconddiv,Input,Textarea,Button,Parentdiv,Twodiv,Onediv,Threediv,Inputdiv} from "../style/mapstyle"
-import Shohada from '../imagesC/shohada.jpg'
+import {insertUser} from '../api/api'
 const Map  = () => {
+    const [message,setMessage] = useState({
+        name:'',
+        email:'',
+        msg:''
+    })
+ const handleSubmit = e=>{
+e.preventDefault();
+insertUser(message)
+
+
+   }
     return ( 
         <>
         <h2 style={{textAlign:"center",marginBottom:"32px",letterSpacing:'2px',position:'relative',top:"20px" ,   color: "rgb(252, 145, 162)",fontFamily:"lobster,sans-serif"}}>
@@ -22,12 +33,13 @@ style={{border:0 , allowfullscreen:"", ariaHidden:"false", tabindex:"0",width:'1
           <div style={{width:"100%",height:'100%',background:'rgba(0,0,0,0.5)',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
 <div >
     <Inputdiv >
-    <Input type="text" placeholder="YOUR NAME" width="231px" height="53px" color="" style={{}}></Input>
-    <Input type="text" placeholder="YOUR-EMAIL" width="231px" height="53px"></Input>
+    <Input type="text" placeholder="YOUR NAME" width="231px" height="53px" onChange={e => setMessage({...message,name:e.target.value})}></Input>
+    <Input type="text" placeholder="YOUR-EMAIL" width="231px" height="53px" onChange={e => setMessage({...message,email:e.target.value})}></Input>
     </Inputdiv>
     <div style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
-    <Textarea placeholder="YOUR-MESSAGE"width="80%" height="114px"></Textarea>
-    <Button>Send Message</Button>
+    <Textarea placeholder="YOUR-MESSAGE"width="80%" height="114px" onChange={e => setMessage({...message,msg:e.target.value})}></Textarea>
+    <Button onSubmit={()=> handleSubmit}>Send Message</Button>
+    {console.log(message)}
     </div>
 
 </div>

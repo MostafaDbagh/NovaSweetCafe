@@ -10,7 +10,7 @@ const apiPort = process.env.PORT|| 3005
 const router = require('./routes/review-route')
 
 
-mongoURI='mongodb+srv://safi:35064612@cluster0-ags3s.mongodb.net/review?retryWrites=true&w=majority'
+mongoURI='mongodb+srv://safi:35064612@cluster0-ags3s.mongodb.net/message?retryWrites=true&w=majority'
 mongoose.connect(mongoURI||'mongodb://127.0.0.1:27017/fuckoff',{useNewUrlParser:true,useUnifiedTopology: true})
 .catch((err)=>{
     console.log(`an error was occure ${err}`)

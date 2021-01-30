@@ -8,7 +8,7 @@ createReview = (req, res) => {
     if (!body) {
         return res.status(400).json({
             success: false,
-            error: 'You must provide a movie',
+            error: 'No message was sent',
         })
     }
         
@@ -24,13 +24,13 @@ createReview = (req, res) => {
             return res.status(201).json({
                 success: true,
                 id: movie._id,
-                message: 'Movie created!',
+                message: 'message  sent',
             })
         })
         .catch(error => {
             return res.status(400).json({
                 error,
-                message: 'Movie not created!',
+                message: 'no message!',
             })
         })
 }
