@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import {MapDiv,Seconddiv,Input,Textarea,Button,Parentdiv,Twodiv,Onediv,Threediv,Inputdiv} from "../style/mapstyle"
-import {insertUser} from '../api/api'
+import apis from '../api/api'
 const Map  = () => {
     const [message,setMessage] = useState({
         name:'',
@@ -9,7 +9,9 @@ const Map  = () => {
     })
  const handleSubmit = e=>{
 e.preventDefault();
-insertUser(...message)
+await.apis.insertUser(message).then(
+    alert('we add message successfully')
+)
 
 
    }
