@@ -6,6 +6,7 @@ import axios from 'axios'
 const api = axios.create({
    
     baseURL:'https://novasweetcafe.herokuapp.com/api',   
+    // baseURL:'http://localhost:3005/api ',   
   //    withCredentials: false,
   //   headers: {
   //     'Access-Control-Allow-Origin' : '*',

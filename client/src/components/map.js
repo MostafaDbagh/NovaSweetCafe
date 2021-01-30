@@ -9,7 +9,7 @@ const Map  = () => {
     })
  const handleSubmit = e=>{
 e.preventDefault();
-insertUser(message)
+insertUser(...message)
 
 
    }
