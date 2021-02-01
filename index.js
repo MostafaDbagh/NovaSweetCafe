@@ -16,7 +16,7 @@ mongoose.connect(mongoURI||'mongodb://127.0.0.1:27017/fuckoff',{useNewUrlParser:
     console.log(`an error was occure ${err}`)
 })
 mongoose.connection.on('connected',()=>{
-    console.log('you are connecting to database')
+    console.log('you are connecting to database') 
 })
 mongoose.connection.on('error',(err)=>{
     console.log('connection failed to database',err.message)

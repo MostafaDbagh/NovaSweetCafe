@@ -1,19 +1,16 @@
 import React,{useState} from 'react';
 import {MapDiv,Seconddiv,Input,Textarea,Button,Parentdiv,Twodiv,Onediv,Threediv,Inputdiv} from "../style/mapstyle"
-import apis from '../api/api'
+import safi  from '../api/api'
+import apis from '../api/api';
 const Map  = () => {
-    const [message,setMessage] = useState({
-        name:'',
-        email:'',
-        msg:''
-    })
- const handleSubmit = e=>{
-e.preventDefault();
-await.apis.insertUser(message).then(
-    alert('we add message successfully')
-)
+    const [message,setMessage] = useState({  name:'', email:'', msg:'',})
+  const handleClick = ()=>{
+      apis.getuser().then( alert('hello user'))
+  }
+ const  handleSubmit = async ()=>{
 
-
+const payload = message;
+await apis.insertUser(payload).then(res => console.log(payload)).catch(err => console.log(err.error))
    }
     return ( 
         <>
@@ -40,8 +37,8 @@ style={{border:0 , allowfullscreen:"", ariaHidden:"false", tabindex:"0",width:'1
     </Inputdiv>
     <div style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
     <Textarea placeholder="YOUR-MESSAGE"width="80%" height="114px" onChange={e => setMessage({...message,msg:e.target.value})}></Textarea>
-    <Button onClick={()=> handleSubmit}>Send Message</Button>
-    {console.log(message)}
+    <Button onClick={ handleSubmit}>Send Message</Button>
+<button onClick={handleClick}>click me</button>
     </div>
 
 </div>
