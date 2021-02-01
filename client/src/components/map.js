@@ -1,16 +1,17 @@
 import React,{useState} from 'react';
-import {MapDiv,Seconddiv,Input,Textarea,Button,Parentdiv,Twodiv,Onediv,Threediv,Inputdiv} from "../style/mapstyle"
-import safi  from '../api/api'
+import {Input,Textarea,Button,Parentdiv,Twodiv,Onediv,Threediv,Inputdiv} from "../style/mapstyle"
+
 import apis from '../api/api';
 const Map  = () => {
     const [message,setMessage] = useState({  name:'', email:'', msg:'',})
+  
   const handleClick = ()=>{
       apis.getuser().then( alert('hello user'))
   }
  const  handleSubmit = async ()=>{
 
 const payload = message;
-await apis.insertUser(payload).then(alert('we will replay quickly')).catch(err => console.log(err.error))
+await apis.insertReview(payload).then(alert('we will replay quickly')).catch(err => console.log(err.error))
    }
     return ( 
         <>
@@ -38,7 +39,7 @@ style={{border:0 , allowfullscreen:"", ariaHidden:"false", tabindex:"0",width:'1
     <div style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
     <Textarea placeholder="YOUR-MESSAGE"width="80%" height="114px" onChange={e => setMessage({...message,msg:e.target.value})}></Textarea>
     <Button onClick={ handleSubmit}>Send Message</Button>
-<button onClick={handleClick}>click me</button>
+
     </div>
 
 </div>

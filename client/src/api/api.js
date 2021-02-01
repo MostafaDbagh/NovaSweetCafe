@@ -8,15 +8,11 @@ const api = axios.create({
     baseURL:'https://novasweetcafe.herokuapp.com/api',  
     
      
-  //   withCredentials: false,
-  //   headers: {
-  //     'Access-Control-Allow-Origin' : '*',
-  //     'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',   
-  // }
+
 })
 
-export const insertUser = payloadd => api.post('/message',payloadd)
+export const insertReview = payloadd => api.post('/message',payloadd)
 
-export const getuser = ()=> api.get('/message')
-const apis = {insertUser,getuser}
+export const insertSubscriber = payload=> api.get('/subscribe',payload)
+const apis = {insertReview,insertSubscriber}
 export default apis;

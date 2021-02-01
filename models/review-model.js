@@ -7,6 +7,6 @@ const ReviewSchema = new mongoose.Schema(
        msg:{type:String,required:true}
     }
 )
-// module.exports=mongoose.model('users',UserSchema)
+
 module.exports=mongoose.model('reviews',ReviewSchema)
 
