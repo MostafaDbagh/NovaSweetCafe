@@ -10,7 +10,7 @@ const Map  = () => {
  const  handleSubmit = async ()=>{
 
 const payload = message;
-await apis.insertUser(payload).then(alert('we will replay quickly').catch(err => console.log(err.error))
+await apis.insertUser(payload).then(alert('we will replay quickly')).catch(err => console.log(err.error))
    }
     return ( 
         <>
