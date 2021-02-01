@@ -7,12 +7,13 @@ const api = axios.create({
    
     baseURL:'https://novasweetcafe.herokuapp.com/api',  
     
+    
      
 
 })
 
 export const insertReview = payloadd => api.post('/message',payloadd)
 
-export const insertSubscriber = payload=> api.get('/subscribe',payload)
+export const insertSubscriber = payload=> api.post('/subscribe',payload)
 const apis = {insertReview,insertSubscriber}
 export default apis;

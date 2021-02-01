@@ -40,7 +40,7 @@ createReview = (req, res) => {
      
 createSubscibe = (req,res)=>{
     const body = req.body
-
+ console.log(body)
     if (!body) {
         console.log('no body')
         return res.status(400).json({
@@ -50,8 +50,10 @@ createSubscibe = (req,res)=>{
     }
       
     const subscribe = new Subscribe(body)
-  
+    console.log(subscribe)
+
     if (!subscribe) {
+        
         return res.status(400).json({ success: false, error: err })
     }
 
@@ -60,8 +62,8 @@ createSubscibe = (req,res)=>{
         .then(() => {
             return res.status(201).json({
                 success: true,
-                id: Review._id,
-                message: 'message  sent',
+                id: subscribe._id,
+               
             })
         })
         .catch(error => {
