@@ -1,17 +1,26 @@
-import React,{useState} from 'react';
+import React,{useRef, useState} from 'react';
 import {Input,Textarea,Button,Parentdiv,Twodiv,Onediv,Threediv,Inputdiv} from "../style/mapstyle"
 
 import apis from '../api/api';
 const Map  = () => {
-    const [message,setMessage] = useState({  name:'', email:'', msg:'',})
-  
+    let [message,setMessage] = useState({  name:'', email:'', msg:'',})
+    const btnRef = useRef();
+    const inputRef = useRef();
   const handleClick = ()=>{
       apis.getuser().then( alert('hello user'))
   }
  const  handleSubmit = async ()=>{
 
 const payload = message;
-await apis.insertReview(payload).then(alert('we will replay quickly')).catch(err => console.log(err.error))
+await apis.insertReview(payload).then(alert('we will replay quickly'))
+
+.then(btnRef.current.disabled =true)
+.then(setMessage({
+    name:'',
+email:'',
+msg:''}))
+.catch(err => console.log(err.error))
+
    }
     return ( 
         <>
@@ -33,12 +42,12 @@ style={{border:0 , allowfullscreen:"", ariaHidden:"false", tabindex:"0",width:'1
           <div style={{width:"100%",height:'100%',background:'rgba(0,0,0,0.5)',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
 <div >
     <Inputdiv >
-    <Input type="text" placeholder="YOUR NAME" width="231px" height="53px" onChange={e => setMessage({...message,name:e.target.value})}></Input>
-    <Input type="text" placeholder="YOUR-EMAIL" width="231px" height="53px" onChange={e => setMessage({...message,email:e.target.value})}></Input>
+    <Input type="text" placeholder="YOUR NAME" value={message.name} width="231px" ref={inputRef} height="53px" onChange={e => setMessage({...message,name:e.target.value})}></Input>
+    <Input type="text" placeholder="YOUR-EMAIL" width="231px" value={message.email} height="53px" onChange={e => setMessage({...message,email:e.target.value})}></Input>
     </Inputdiv>
     <div style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
-    <Textarea placeholder="YOUR-MESSAGE"width="80%" height="114px" onChange={e => setMessage({...message,msg:e.target.value})}></Textarea>
-    <Button onClick={ handleSubmit}>Send Message</Button>
+    <Textarea placeholder="YOUR-MESSAGE"width="80%"  height="114px" value={message.msg} onChange={e => setMessage({...message,msg:e.target.value})}></Textarea>
+    <Button onClick={ handleSubmit} ref={btnRef} >Send Message</Button>
 
     </div>
 
