@@ -98,7 +98,7 @@ width:${props => props.width};
 height:${props => props.height};
 background:${props => props.background || 'white'}
 padding:18px 19px 15px;
-margin:0px 30px 30px 0;
+margin:0px 30px 0px 0;
 font-family:signika,sans-serif;
 &::placeholder{
     color:${props => props.color}
@@ -108,7 +108,7 @@ export const Textarea = styled.textarea`
 width:${props => props.width};
 height:${props => props.height};
 padding:18px 19px 15px;
-margin:0 0px 10px 0;
+margin:0 0px 0px 0;
 font-family:signika,sans-serif;
 @media(max-width:600px){
     width:320px;
@@ -129,6 +129,7 @@ border:none;
 outline:none;
 font-family:signika,sans-serif;
 font-size:14px;
+margin:12px 8px  0;
 
 `
 export const Lastinput = styled.input`
@@ -136,21 +137,26 @@ width: 180px;
 height:60px;
 padding:20px 22px 19px;
 backgroudn:rgb(251,145,163);
-margin-right:30px;
+
+
 font-family:signika,sans-serif;
 &::placeholder{
     color:white
 }
 `
-export const Lastbutton= styled.button`
-width: 134px;
-height:56px;
-font-family:signika,sans-serif;
-padding:20px 22px 19px;
-backgroudn:rgb(251,145,163);
-margin-right:30px;
-&::placeholder{
-    color:white
-}
+// export const Lastbutton= styled.button`
+// width: 134px;
+// height:56px;
+// font-family:signika,sans-serif;
+// padding:20px 22px 19px;
+// backgroudn:rgb(251,145,163);
+
+// &::placeholder{
+//     color:white
+// }
+// `
+export const Smalldiv =styled.div`
+display:flex;
+flex-direction:column;
 `
 

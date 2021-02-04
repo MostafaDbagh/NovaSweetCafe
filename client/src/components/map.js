@@ -1,20 +1,46 @@
 import React,{useRef, useState} from 'react';
-import {Input,Textarea,Button,Parentdiv,Twodiv,Onediv,Threediv,Inputdiv} from "../style/mapstyle"
+import {Input,Textarea,Button,Parentdiv,Twodiv,Onediv,Threediv,Inputdiv,Smalldiv} from "../style/mapstyle"
 
 import apis from '../api/api';
 const Map  = () => {
+    const spanStyle ={
+        color:'red',
+        fontFamily:'signika,sans-serif',
+        fontSize:'12px',
+        display:'none',
+        fontWeight:'bold',
+        margin:'8px 0'
+    }
     let [message,setMessage] = useState({  name:'', email:'', msg:'',})
     const btnRef = useRef();
-    const inputRef = useRef();
+    const nameRef = useRef();
+    const emailRef = useRef();
+    const messageRef = useRef();
+    const spanRef = useRef();
+    const spanRef1 = useRef();
+    const spanRef2 = useRef();
   const handleClick = ()=>{
       apis.getuser().then( alert('hello user'))
   }
  const  handleSubmit = async ()=>{
+     const span = [spanRef,spanRef1,spanRef2]
+     const input = [nameRef.current,emailRef.current,messageRef.current];
+     input.map((item,i) => item.value =='' ? span[i].current.style.display='block':span[i].current.style.display='none')
+   for(let  i = 0;i<=input.length-1;i++){
+    if(input[i].value ==''){
+        return
+    }
+       
+   }
+  
+    
+  
+
 
 const payload = message;
 await apis.insertReview(payload).then(alert('we will replay quickly'))
 
-.then(btnRef.current.disabled =true)
+.then()
 .then(setMessage({
     name:'',
 email:'',
@@ -42,12 +68,25 @@ style={{border:0 , allowfullscreen:"", ariaHidden:"false", tabindex:"0",width:'1
           <div style={{width:"100%",height:'100%',background:'rgba(0,0,0,0.5)',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
 <div >
     <Inputdiv >
-    <Input type="text" placeholder="YOUR NAME" value={message.name} width="231px" ref={inputRef} height="53px" onChange={e => setMessage({...message,name:e.target.value})}></Input>
-    <Input type="text" placeholder="YOUR-EMAIL" width="231px" value={message.email} height="53px" onChange={e => setMessage({...message,email:e.target.value})}></Input>
-    </Inputdiv>
-    <div style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
-    <Textarea placeholder="YOUR-MESSAGE"width="80%"  height="114px" value={message.msg} onChange={e => setMessage({...message,msg:e.target.value})}></Textarea>
+    <Smalldiv style={{marginBottom:'8px'}}>
+    <Input type="text" placeholder="YOUR NAME" value={message.name} width="231px" ref={nameRef} height="53px" onChange={e => setMessage({...message,name:e.target.value})}></Input>
+    <span style={spanStyle} ref={spanRef}>Please Enter your name</span>
+    </Smalldiv>
+   <Smalldiv>
+   <Input type="email" placeholder="YOUR-EMAIL" width="231px" 
+   ref={emailRef} value={message.email} height="53px" 
+   onChange={e => setMessage({...message,email:e.target.value})}/>
+   <span style={spanStyle} ref={spanRef1}>Please Enter your Email</span>
+   </Smalldiv>
+   </Inputdiv>
+    <div style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',marginTop:'20px'}}>
+        
+    <Textarea placeholder="YOUR-MESSAGE"width="80%"ref={messageRef}  
+    height="114px" value={message.msg} 
+    onChange={e => setMessage({...message,msg:e.target.value})}></Textarea>
+    <span ref={spanRef2} style={spanStyle}>please Enter your message</span>
     <Button onClick={ handleSubmit} ref={btnRef} >Send Message</Button>
+   
 
     </div>
 
