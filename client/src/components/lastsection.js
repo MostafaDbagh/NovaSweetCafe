@@ -31,7 +31,7 @@ await apis.insertSubscriber(payload)
                    color="white" width="231px" height="53px" placeholder="ENTER YOUR EMAIL"></Lastinput>
                   <Button onClick={handlesubscribe} ref={btnRef} >SUBSCRIBE</Button>
                   </div>
-                  <div style={{margin:'8px auto 22px'}}>
+                  <div style={{margin:'8px auto 22px' ,textAlign:'center'}}>
                   <span ref={spanRef} style={{visibility:'hidden',fontFamily:'signika,sans-serif'}}>Thank You For Subscribe </span>
                   </div>
                
