@@ -25,8 +25,10 @@ export default function SimpleSlider() {
   return (
       <>
    <div style={{background:`url(${Sushi})`,width:'90%',height:'600px',margin:'24px auto',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
- 
-   <h2 style={{textAlign:"center",margin:"32px 0",letterSpacing:'2px' , fontWeight:'bold',fontSize:'44px',   color: "rgb(255,243,220)",fontFamily:"lobster,sans-serif"}}>What Customers Say About Us</h2>
+ <div style={{width:'100%',hieght:'50px',position:'relative',top:'25px'}}>
+ <h2 style={{textAlign:"center",margin:"2px 0",letterSpacing:'2px' , fontWeight:'bold',fontSize:'34px',   color: "rgb(255,243,220)",fontFamily:"lobster,sans-serif"}}>Customers Say About Us</h2>
+ </div>
+  
    <Wrapperdiv style={{margin:"32px auto",width:"90%",background:`rgba(255,255,255,0.7)`,borderRadius:"10px",color:"black"}}>
         
     

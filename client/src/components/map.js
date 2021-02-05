@@ -9,7 +9,7 @@ const Map  = () => {
         fontSize:'12px',
         display:'none',
         fontWeight:'bold',
-        margin:'8px 0'
+        margin:'2px 0'
     }
     let [message,setMessage] = useState({  name:'', email:'', msg:'',})
     const btnRef = useRef();
@@ -82,7 +82,7 @@ style={{border:0 , allowfullscreen:"", ariaHidden:"false", tabindex:"0",width:'1
     <div style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',marginTop:'20px'}}>
         
     <Textarea placeholder="YOUR-MESSAGE"width="80%"ref={messageRef}  
-    height="114px" value={message.msg} 
+    height="104px" value={message.msg} 
     onChange={e => setMessage({...message,msg:e.target.value})}></Textarea>
     <span ref={spanRef2} style={spanStyle}>please Enter your message</span>
     <Button onClick={ handleSubmit} ref={btnRef} >Send Message</Button>
