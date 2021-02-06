@@ -6,10 +6,11 @@ import b4 from './../imagesC/b.png'
 import {Contentdiv,Wrapper,Clipdiv,Rectanglediv,Shape,Flexdiv,Div1,Span,Titlediv,Button} from '../style/contentstyle'
 import {faHeart} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { colorFor } from 'react-social-icons/dist/networks';
+import {Commondiv} from '../style/navbarstyle'
+
 const Content = () => {
     return (  
-        <div>
+        <Commondiv>
  <Contentdiv>
      <Wrapper></Wrapper>
      <Shape>
@@ -50,7 +51,7 @@ const Content = () => {
 </Div1>
           </Flexdiv>
        
-        </div>
+        </Commondiv>
        
     );
 }

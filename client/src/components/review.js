@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import {faQuoteLeft} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {Wrapperdiv} from '../style/review'
-import bg from '../images/bg.jpg'
+import {Commondiv} from '../style/navbarstyle'
 
 export default function SimpleSlider() {
   const [review,setReview] = useState([])
@@ -23,8 +23,8 @@ export default function SimpleSlider() {
     slidesToScroll: 1
   };
   return (
-      <>
-   <div style={{background:`url(${Sushi})`,width:'90%',height:'600px',margin:'24px auto',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+      <Commondiv>
+   <div style={{background:`url(${Sushi})`,width:'100%',margin:'24px auto',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
  <div style={{width:'100%',hieght:'50px',position:'relative',top:'25px'}}>
  <h2 style={{textAlign:"center",margin:"2px 0",letterSpacing:'2px' , fontWeight:'bold',fontSize:'34px',   color: "rgb(255,243,220)",fontFamily:"lobster,sans-serif"}}>Customers Say About Us</h2>
  </div>
@@ -52,6 +52,6 @@ export default function SimpleSlider() {
     </Wrapperdiv>
    </div>
    
-    </>
+    </Commondiv>
   );
 }

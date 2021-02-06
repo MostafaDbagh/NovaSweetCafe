@@ -6,9 +6,13 @@ display:flex;
 flex-wrap:wrap;
 align-items:center;
 
-
-
-
+`
+  const Commondiv= styled.div`
+width:90%;
+margin:0 auto;
+@media(max-width:906px){
+    width:100%
+}
 
 `
 const Logo = styled.section`
@@ -61,7 +65,7 @@ color:#white;
 
 
 
-export {Unorderlist,Listitem,Logo,Anchore,Menu,Image,Joindiv};
+export {Unorderlist,Listitem,Logo,Anchore,Menu,Image,Joindiv,Commondiv};
 
 // const Navbarh = styled.div`
 // width:96%;

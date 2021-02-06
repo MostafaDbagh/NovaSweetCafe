@@ -1,6 +1,6 @@
 import React,{useRef, useState} from 'react';
 import {Input,Textarea,Button,Parentdiv,Twodiv,Onediv,Threediv,Inputdiv,Smalldiv} from "../style/mapstyle"
-
+import {Commondiv} from '../style/navbarstyle'
 import apis from '../api/api';
 const Map  = () => {
     const spanStyle ={
@@ -19,17 +19,25 @@ const Map  = () => {
     const spanRef = useRef();
     const spanRef1 = useRef();
     const spanRef2 = useRef();
-  const handleClick = ()=>{
-      apis.getuser().then( alert('hello user'))
-  }
+    const emailCheck = (email)=>{
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
+
  const  handleSubmit = async ()=>{
+
+    
      const span = [spanRef,spanRef1,spanRef2]
      const input = [nameRef.current,emailRef.current,messageRef.current];
      input.map((item,i) => item.value =='' ? span[i].current.style.display='block':span[i].current.style.display='none')
+     if( !emailCheck(emailRef.current.value)){
+        return
+    };
    for(let  i = 0;i<=input.length-1;i++){
     if(input[i].value ==''){
         return
     }
+    
        
    }
   
@@ -49,7 +57,7 @@ msg:''}))
 
    }
     return ( 
-        <>
+        <Commondiv>
         <h2 style={{textAlign:"center",marginBottom:"32px",letterSpacing:'2px',position:'relative',top:"20px" ,   color: "rgb(252, 145, 162)",fontFamily:"lobster,sans-serif"}}>
             Where You Can Find Us
             </h2>  
@@ -94,7 +102,7 @@ style={{border:0 , allowfullscreen:"", ariaHidden:"false", tabindex:"0",width:'1
 </div>
           </Threediv>
       </Parentdiv>
-        </>
+        </Commondiv>
      );
 }
  

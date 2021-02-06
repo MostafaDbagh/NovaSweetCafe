@@ -15,14 +15,14 @@ import {
   DropdownItem,
   NavbarText
 } from 'reactstrap';
-
+import {Commondiv} from '../style/navbarstyle'
 const Example = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div style={{width:"90%",margin:"0 auto"}}>
+    <Commondiv>
       <Navbar color="dark" dark  expand="md">
         <NavbarBrand href="/" style={{fontFamily:"lobster,sans-serif",color:"rgb(255,243,191)"}}>Yamazaki Menu</NavbarBrand>
         <NavbarToggler onClick={toggle} />
@@ -61,12 +61,12 @@ const Example = (props) => {
             <NavItem>
          
               <Link style={{ textDecoration: "none", }} to="/cold_beverages">
-              <NavLink >  COLD BEVERAGES   </NavLink>
+              <NavLink >  C-BEVERAGES   </NavLink>
               </Link>
             
             </NavItem>
             <NavItem>
-             <Link style={{ textDecoration: "none", }} to="/hot_beverages">  <NavLink >HOT BEVERAGES </NavLink></Link>    
+             <Link style={{ textDecoration: "none", }} to="/hot_beverages">  <NavLink >H-BEVERAGES </NavLink></Link>    
             </NavItem>
             <NavItem>
             
@@ -78,7 +78,7 @@ const Example = (props) => {
           
         </Collapse>
       </Navbar>
-    </div>
+      </Commondiv>
   );
 }
 

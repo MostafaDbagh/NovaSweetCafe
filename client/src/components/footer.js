@@ -2,10 +2,10 @@ import React from 'react';
 import {Footerdiv,SmallFooterdiv,Footercon,Footerpara,Anchor} from '../style/footerstyle'
 import {SocialIcon} from 'react-social-icons'
 import Yamazaki from './../images/yamazaki.png'
-import socialIcon from 'react-social-icons/dist/social-icon';
+import {Commondiv} from '../style/navbarstyle'
 const Footer = () => {
     
-    return ( <>
+    return ( <Commondiv>
     <Footercon>
         <Footerdiv>
 <SmallFooterdiv>
@@ -48,7 +48,7 @@ const Footer = () => {
 
 
 </Footercon>
-     </>
+     </Commondiv>
      );
 }
  

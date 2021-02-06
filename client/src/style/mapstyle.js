@@ -9,7 +9,7 @@ import bg from '../imagesC/shohada.jpg'
 
 
 export const Parentdiv = styled.div`
-width:90vw;
+
 height:650px;
 
 display:grid;
@@ -50,6 +50,7 @@ export const Threediv= styled.div`
 grid-column:2/3;
 grid-row:1/3;
 background:url(${bg});
+backgrond-position:center bottom;
 @media(max-width:950px){
   
     grid-column:1/3;

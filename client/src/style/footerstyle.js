@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Footercon = styled.div`
-width:90vw;
+
 
 margin:0 auto;
 background:#443634;
@@ -17,7 +17,7 @@ display:grid;
 grid-template-columns:1fr 1fr 1fr;
 align-content:center;
 grid-row-gap:10px;
-@media(max-width:650px){
+@media(max-width:968px){
     height:auto;
     grid-template-columns:1fr;
     grid-template-rows:1fr 1fr 1fr;

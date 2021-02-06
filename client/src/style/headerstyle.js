@@ -13,7 +13,7 @@ const Div = styled.div`
 display:flex;
 justify-content:space-between;
 align-items:center;
-width:90%;
+
 height:158px;
 background:#443634;
 margin:11px auto;
@@ -62,6 +62,7 @@ text-align:center;
  const Logodiv2 = styled.div`
  width:60%;
  height:100%;
+ margin:0 auto;
 display:flex;
 flex-direction:column;
 justify-content:center;

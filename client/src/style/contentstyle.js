@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import coffeebg from '../images/nova.jpg'
 export const Contentdiv = styled.div`
-width:90%;
+
 margin:15px auto;
 height:500px;
 position:relative;
