@@ -20,6 +20,7 @@ const Lastsection = () => {
     if( emailCheck(inputRef.current.value)){
        setMess('thank for sub')
         await apis.insertSubscriber(payload)
+        .then(alert('hello world'))
         btnRef.current.disabled = true
     }
    else{
