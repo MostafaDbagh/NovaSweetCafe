@@ -11,6 +11,7 @@ const Map  = () => {
         fontWeight:'bold',
         margin:'2px 0'
     }
+    let [email,setEmial] = useState('');
     let [message,setMessage] = useState({  name:'', email:'', msg:'',})
     const btnRef = useRef();
     const nameRef = useRef();
@@ -31,6 +32,8 @@ const Map  = () => {
      const input = [nameRef.current,emailRef.current,messageRef.current];
      input.map((item,i) => item.value =='' ? span[i].current.style.display='block':span[i].current.style.display='none')
      if( !emailCheck(emailRef.current.value)){
+        setEmial('Invalid Email')
+        spanRef1.current.style.display='block'
         return
     };
    for(let  i = 0;i<=input.length-1;i++){
@@ -84,7 +87,7 @@ style={{border:0 , allowfullscreen:"", ariaHidden:"false", tabindex:"0",width:'1
    <Input type="email" placeholder="YOUR-EMAIL" width="231px" 
    ref={emailRef} value={message.email} height="53px" 
    onChange={e => setMessage({...message,email:e.target.value})}/>
-   <span style={spanStyle} ref={spanRef1}>Please Enter your Email</span>
+   <span style={spanStyle} ref={spanRef1}>{email}</span>
    </Smalldiv>
    </Inputdiv>
     <div style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',marginTop:'20px'}}>

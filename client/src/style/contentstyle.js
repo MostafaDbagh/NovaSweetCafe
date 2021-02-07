@@ -17,7 +17,7 @@ height:100%;
 background:rgba(0,0,0,0.6)
 `
 export const Flexdiv = styled.div`
-width:90%;
+width:100%;
 
 margin: 0 auto;
 display:flex;

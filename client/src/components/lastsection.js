@@ -3,6 +3,7 @@ import {MapDiv,Seconddiv,Input,Lastinput,Button} from "../style/mapstyle"
 import apis from '../api/api'
 import {Commondiv} from '../style/navbarstyle'
 const Lastsection = () => {
+    let [message,setMess] = useState('');
     const [ sub_email,setSube_mail] = useState('');
     const btnRef = useRef();
     const spanRef = useRef();
@@ -10,20 +11,28 @@ const Lastsection = () => {
     const emailCheck = (email)=>{
         const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
+
     }
+   
     const handlesubscribe = async (e)=>{
-    
-        const payload = {'sub_email':sub_email};
+    const payload = {'sub_email':sub_email};
     if(inputRef.current.value =='') return; 
-    if( !emailCheck(inputRef.current.value)){
-        return
-    };
-await apis.insertSubscriber(payload)
-.then(btnRef.current.disabled = true)
-.then(spanRef.current.style.visibility='visible')
-.then(setTimeout(() => {
-    spanRef.current.style.visibility='hidden'
-}, 3000))
+    if( emailCheck(inputRef.current.value)){
+       setMess('thank for sub')
+        await apis.insertSubscriber(payload)
+        btnRef.current.disabled = true
+    }
+   else{
+       setMess('invalid email')
+   }
+
+   spanRef.current.style.visibility='visible'
+ 
+   setTimeout(() => {
+       spanRef.current.style.visibility='hidden'
+   }, 3000)
+
+ 
     }
 
     return ( 
@@ -42,7 +51,8 @@ await apis.insertSubscriber(payload)
                   <Button onClick={handlesubscribe} ref={btnRef} style={{fontSize:'12px'}} >SUBSCRIBE</Button>
                   </div>
                   <div style={{margin:'8px auto 22px' ,textAlign:'center'}}>
-                  <span ref={spanRef} style={{visibility:'hidden',fontFamily:'signika,sans-serif'}}>Thank You For Subscribe </span>
+                      {console.log('this message'+message)}
+                  <span ref={spanRef} style={{visibility:'hidden',fontFamily:'signika,sans-serif'}}>{message} </span>
                   </div>
                
               </div>
